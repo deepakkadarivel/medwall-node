@@ -23,6 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^1.1.2",
+    "aws-sdk": "^2.114.0",
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "^3.5.0",
     "body-parser": "^1.18.0",

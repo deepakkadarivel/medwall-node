@@ -1,3 +1,5 @@
+const s3 = require('./s3/index');
+
 const express = require('express');
 
 const neo = require('./neo/person');
@@ -17,6 +19,7 @@ router.get('/', getAppStatus);
 // neo4j access points
 router.post('/api/v1/login', neo.login);
 router.post('/api/v1/register', neo.register);
+router.put('/upload', s3.upload);
 
 // Validation Middleware
 secureRouter.use('', jwt.token);
